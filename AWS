@@ -1,0 +1,207 @@
+																		AWS-Amazon Web Service 
+																		======================
+																		
+AWS components
+---------------
+
+Storage
+-------
+
+EBS(Elastic Block Store): Virtual disk used in EC2 instance.
+
+S3(Simple Storage Services):It is virtual disk to store data.
+
+Glacier: To store archive file that are not required for everyday usage.
+
+EFS(elastic File service): File base storage.Can share the volume with multiple servers.
+
+Storage Gateway :  Connect S3 to your own data centre.	
+
+Databases
+---------
+
+RDS(Relatinal Database Services)
+
+DynamoDB: Non relational database.
+
+Redshift :Data warehousing solution.
+
+Elasticache:
+
+Migration
+---------
+
+Snowball
+
+DMS(Database Migration Service) : Migrate databse from traditinal way to AWS and from one region to another as well.No downtime required.
+
+SMS(Server Migration Service):  Shift Vm running on the primises to AWS cloud.
+
+Analytics
+----------
+
+Athena : Allows you to run sql queries.
+
+EMA(Elastic Map Reduce)
+
+Cloud Search
+
+Elastic Search
+
+Kinesis: Way of streaming and analysing real time data.
+
+Data Pipeline : Allows to move data from one place to another.
+
+Quick Sight : Business analytic tool
+
+Security & Identity
+-------------------
+
+IAM(Identity Acess Management)
+
+Inspector:Agnet installed on VMs will report security issues.
+
+Cerificate Manger: Provide free SSL certificate
+
+Directory service : Way of using active directory.
+
+WAF (Web Application Firewall) : Application level firewall protection.
+
+Artifacts : Where you get your documentation in AWS.
+
+
+Management Tools
+----------------
+
+Cloud Watch : Used to monitor performance,basicaly EC2 components
+
+Cloud Formation:Way of turning infrastructure into code
+
+Cloud Trail : Audting changes to your AWS enviornment.
+
+Opsworks: Way of automating deployment using cheff
+
+Config : Automatically monitor aws envirnment and reports warning when specific configuration breaks.
+
+Service Catalog:Allows to define what aws services need to authorised to use in your environment.
+
+Trusted advisor: Automated way of scanning your enviornment and  giving tips.
+
+Application Services
+--------------------
+
+Step Functions : Way of visualazing what is going inside your application.
+
+SWF(Simple Workforce Service) : Way of cordinating both automated task and humanly task.
+
+API Gateway : Is a door it allows you to create,publish,maintain,monitor and secure APIs.
+
+AppStream: Streaming desktop applications to users.
+
+Elastic Transcoder:Basically changes to video format to suit all different devices.
+
+
+Developer tools
+---------------
+
+Code Commit: It is basically git hub to store your code.
+
+CodeBuild: Way of compailing your code.
+
+CodeDeploy: Way of deploying your code in EC2 instanaces.
+
+CodePipeline: Track diffrent versions of code.(Like subversion)
+
+Moble services
+--------------
+
+MobileHub:Add, configure and design feature of mobile app
+
+Cognito: Signup and signin in to apps using social identity credential.
+
+Device Farm:Testing your apps on different physical devices.
+
+Mobile analytics: Way of analysing your mobile data.
+
+PinPoint:
+
+Business Productivity
+---------------------
+
+WorkDocs:Way of securely storing your documents.
+
+WorkMail:Exchnage of AWS.
+
+Internet Of Things(IOT)
+----------------------
+
+
+
+Desktop & App Streaming
+------------------------
+
+WorkSpaces:is VDI
+
+AppStream2.0 :Way of streaming desktop applications to users.
+
+Artificial Intelligence
+-----------------------
+
+Alexa :Amazon voice service.
+
+Polly:
+
+Machine Learning
+
+Rekognition:Facial rekognition.
+
+Messaging
+---------
+
+SNS:
+
+SQS:
+
+SEM(Simple Email Service):
+
+
+IAM---Identity Access Mangement
+----
+
+Users:End users
+
+Groups : A collection of users have same permission.
+
+Role : You can create a role and assign them to aws resources.
+
+Policy: A documents that defines one or more permissions.
+
+S3
+--
+It is object base storage not for run opeating system.
+
+Fies size can be store from 0B to 5TB.
+
+Parts of S3
+Key-This is is simply the name of the object.
+Value-This is simply the data and it is made up of a sequence of  bytes.
+Version Id -Important for versioning.
+Metadata-Data about the data you are storing.
+Subresources-Access Control List and torrent.
+
+Different Storage tiers
+S3-It is 99.99% availability and 99.999999999% durability.
+S3-IA(Infrequently Accessed)-The data accessed less frequently but required a rapid access when needded.
+Reduces Redundancy Storage(RRS) :Designed to provide 99.99 %durability and 99.99% avilability.
+Glacier-Very cheap,but used for data archives only.It takes 3-4 hours to restore from Glacer.
+
+
+
+
+
+
+
+
+
+
+
