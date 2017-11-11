@@ -172,7 +172,7 @@ Users:End users
 
 Groups : A collection of users have same permission.
 
-Role : You can create a role and assign them to aws resources.
+Role : You can create a role and assign them to aws resources.	
 
 Policy: A documents that defines one or more permissions.
 
@@ -180,20 +180,35 @@ S3
 --
 It is object base storage not for run opeating system(Block base staorage).
 
+It allows you to upload the files.Once you upload the files to S3 ,you will receive a HTTP 200 code if the upload was successful.
+
 Fies size can be store from 0B to 5TB.
 
 Parts of S3
+
 Key-This is is simply the name of the object.
+
 Value-This is simply the data and it is made up of a sequence of  bytes.
+
 Version Id -Important for versioning.
+
 Metadata-Data about the data you are storing.
+
 Subresources-Access Control List and torrent.
 
 Different Storage tiers
-S3-It is 99.99% availability and 99.999999999% durability.
+
+S3-It is 99.99% availability and 99.999999999% (11*9) durability.
+
 S3-IA(Infrequently Accessed)-The data accessed less frequently but required a rapid access when needded.
+
 Reduces Redundancy Storage(RRS) :Designed to provide 99.99 %durability and 99.99% avilability.
+
 Glacier-Very cheap,but used for data archives only.It takes 3-4 hours to restore from Glacer.
+
+S3 charges:
+
+Storage,requests,Storage manegment pricing,Data transfer pricing and transfer acceleration.
 
 
 
