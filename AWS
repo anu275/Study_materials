@@ -176,7 +176,7 @@ Role : You can create a role and assign them to aws resources.
 
 Policy: A documents that defines one or more permissions.
 
-S3
+S3-Simple Storage Service.
 --
 It is object base storage not for run opeating system(Block base staorage).
 
@@ -210,8 +210,65 @@ S3 charges:
 
 Storage,requests,Storage manegment pricing,Data transfer pricing and transfer acceleration.
 
+S3 security-
 
 
+CloudFront CDN-Content Delivery Network:
+----------------------------------------
+
+Edge location : This is the location where the content will be chached.This is seperate to an AWS region/avilability zones.
+
+Origin-This is the orgin of all the files that CDN will distribute.This can be either an EC2 instance,S3,Route53 or Elastic Load Balancer.
+
+Distribution-This is the name given the CDN Which consist of a collection of edge locations.
+
+
+Two type of distributions-
+
+Web distribution-Typically used for websites.
+
+RTMP-For media streaming.
+
+S3-Security and Encryption
+----------
+-Bucket policied
+
+-Access control lists
+
+Encryption:
+
+In Transit
+
+-SSL/TLS
+
+At Rest
+
+-Server side encryption.
+ -S3 manged keys-SSE-S3
+ -AWS key management service,managed keys-SSE-KMS
+ -Server side encryption with customer provided keys-SSE-C
+
+-Client side encryption: You can encrypt the data and upload to S3.
+
+Storage Gateway : is a software appliance which  will connect from your datacentre to AWS-S3
+---------------
+
+Filegateway(NFS)-Flat files,stored directly on S3.
+
+Volumegateway(iSCSI) : Virtual hard disks
+-Stoared volume :iSCSI device stoare data locally and will be backed up asynchronously backed up to s3.
+-cached volume : Datset stored on S3 and most frequently accessed dats is cached onsite.
+
+Tapegateway(VTL)-Backup and archive solution.
+
+Snowball :AWS import/export disk accelerate moving large amounts of data into and out of AWS clound using portabl storage device for transport.
+--------
+
+-Snowball:Petabyte scale data transport solution
+
+-Snowball Edge :100Tb data transfer device ad=nd it having storage and compute capabilities.
+
+-Snowmobile : Massive storage device in the bacl ofa truck having pets and exabyte of data.100PB per snowmobile.
 
 
 
